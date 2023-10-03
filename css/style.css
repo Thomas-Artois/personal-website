@@ -20,13 +20,10 @@ body {
     z-index: 1; /* Ensure the text is displayed above the background image */
     text-align: center; /* Center the text horizontally */
     color: white; /* Set the text color to contrast with the background */
-    font-size: 48px; /* Adjust the font size as needed */
+    font-size: 128px; /* Adjust the font size as needed */
     font-weight: bold; /* Adjust the font weight as needed */
     /* Add other text styles as desired */
-    font-family: 'Caveat', cursive;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lobster', cursive;
 }
 
 .text-body-secondary{
