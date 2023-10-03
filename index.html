@@ -13,40 +13,50 @@
 </head>
 <body>
     <section id="hero" class="hero-background"></section>
+    <!-- I have to keep this section here with nothing included, because removing it will break the layout  -->
         <div class="container">
             <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="./assets/images/face.jpg" style="border-radius: 50%; border: solid #213555 2px;" alt="thomas' face" width="200">
                 <h1 class="hero-title display-5 fw-bold text-body-emphasis">Welcome</h1>
                 <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Welcome to my personal website! I'm about to embark on this new journey in a completely different field, and part of this daunting path is to construct this website. 
                     While it may still feel like a lot to process sometimes, I hope this personal website turns out alright. 
                     Look around, and contact me if you have any further questions!</p>
                 </div>
+                <a href="aboutme.html">
+                <button class="about-button button"><p class="button-text">About me</p></button>
+                </a>
             </div>
         </div>
+      
+
+        
+      
     <section id="showcase">
-    <div class="container marketing">
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Pomodoro project <span class="text-body-secondary">//Automate productivity.</span></h2>
-            <p class="lead">Become more productive by having your work/break schedule automated! 25 minutes of work, followed by 5 minutes of break. 
-                Every three work sessions, you get to take a longer break! <br><br>
-                Built this project with Python as part of the Appbrewery tutorial.
-              </p>
+      <div class="container marketing">
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="row featurette headline">My portfolio</h2>
+              <hr class="featurette-divider">
+              <h2 class="featurette-heading fw-normal lh-1">Pomodoro project <span class="text-body-secondary">//Automate productivity.</span></h2>
+              <p class="lead">Become more productive by having your work/break schedule automated! 25 minutes of work, followed by 5 minutes of break. 
+                  Every three work sessions, you get to take a longer break! <br><br>
+                  Built this project with Python as part of the Appbrewery tutorial.
+                </p>
+            </div>
+            <div class="col-md-5">
+              <img src="./assets/images/pomodoro-project.png" alt="Tomato and a clock" height="300px" style="border: solid 2px #213555;">
+            </div>
           </div>
-          <div class="col-md-5">
-            <img src="./assets/images/pomodoro-project.png" alt="Tomato and a clock" height="300px" style="border: solid 2px #213555;">
-          </div>
-        </div>
     
+
         <hr class="featurette-divider">
     
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">Elevator pitch <span class="text-body-secondary">//Present yourself.</span></h2>
-            <p class="lead">Allow this program to present who you are by automatically showing pictures of your choosing, 
+            <p class="lead">Allow this program to present who you are in 2 minutes by automatically showing pictures of your choosing, 
                 with a counting down timer. No more forgetting to press a button to go to the next picture in your presentation, let this Python script handle all that business for you! <br> <br>
               Built this project with Python as a way to creatively present myself.</p>
           </div>
@@ -59,7 +69,7 @@
     
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">And lastly, this website. <span class="text-body-secondary">Checkmate.</span></h2>
+            <h2 class="featurette-heading fw-normal lh-1">And lastly, this website. <span class="text-body-secondary">//Present yourself... <strong>again.</strong></span></h2>
             <p class="lead">And yes, this website also counts as part of my portfolio. Combining HTML for content and CSS for styling, and using Bootstrap, I put together this website based on dr. Angela Yu's classes and tips. <br><br>
             Oh, and all images are generated through Midjourney prompts.</p>
           </div>
@@ -74,25 +84,7 @@
     </section>
 
 
-    <section id="about-me">
-        <div class="about-me">
-            <div class="my-5">
-                <div class="p-5 text-center bg-body-tertiary">
-                    <div class="container py-5">
-                        <h1 class="text-body-emphasis">About me</h1>
-                        <p class="col-lg-8 mx-auto lead">
-                        Having been a highschool teacher for 8 years, I decided it was time to try something new. I had always been intrigued by programming and IT, 
-                        but never really dared to jump forward and fully give in to this curiosity. After over a year of studying coding (mainly Python) on my own,
-                        I took the plunge and applied for a bootcamp. And here we are!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact-me">
-
+    <section id="footer">
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
               <div class="col-md-4 d-flex align-items-center">
@@ -114,8 +106,6 @@
               </ul>
             </footer>
           </div>
-
-
     </section>
 
 

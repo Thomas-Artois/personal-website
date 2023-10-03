@@ -1,3 +1,10 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F0F0F0;
 }
@@ -13,16 +20,11 @@ body {
 }
 
 .hero-title{
-    position: absolute; /* Position the text absolutely within the .hero-background container */
-    top: 25%; /* Adjust the top position as needed */
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
-    z-index: 1; /* Ensure the text is displayed above the background image */
-    text-align: center; /* Center the text horizontally */
-    color: white; /* Set the text color to contrast with the background */
-    font-size: 128px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    /* Add other text styles as desired */
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 128px; 
     font-family: 'Lobster', cursive;
 }
 
@@ -33,4 +35,56 @@ body {
 .featurette-heading{
     color: #213555;
     font-weight: bold;
+}
+
+.headline {
+    color: #213555;
+    font-weight: bold;
+}
+
+.button {
+    margin: 0.25rem 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 10%;
+    background-color: #4F709C;
+    color: #F0F0F0;
+    width: 150px;
+    height: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.button-text {
+    text-shadow: #213555;
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+    font-family: 'Lobster', cursive;
+}
+
+.about-title {
+    font-size: 64px; 
+    font-family: 'Lobster', cursive;
+}
+
+.about-me {
+    padding: 5%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about-text {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.face-pic {
+    border-radius: 50%; 
+    border: inset #213555 4px;
+    width: 200px;
+}
+
+.footer {
+    margin-top: auto;
 }
