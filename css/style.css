@@ -1,90 +1,216 @@
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: #F0F0F0;
 }
 
-.hero-background{
+.background-image {
     background-image: url("../assets/images/mountain-background-2.png");
     background-size: cover;
     background-position: center center;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
     position: relative;
 }
 
-.hero-title{
+.home-container {
+    background-color: #F0F0F0;
+    position: relative;
+}
+
+.main-title {
     position: absolute;
-    top: 25%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-size: 128px; 
-    font-family: 'Lobster', cursive;
-}
-
-.text-body-secondary{
-    color: #4F709C;
-}
-
-.featurette-heading{
-    color: #213555;
-    font-weight: bold;
-}
-
-.headline {
-    color: #213555;
-    font-weight: bold;
-}
-
-.button {
-    margin: 0.25rem 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    border-radius: 10%;
-    background-color: #4F709C;
-    color: #F0F0F0;
-    width: 150px;
-    height: 50px;
-    font-family: 'Lobster', cursive;
-}
-
-.button-text {
-    text-shadow: #213555;
-    font-size: 20px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     text-align: center;
-    text-justify: auto;
-    font-family: 'Lobster', cursive;
+    color: #213555;
+    font-family: lobster;
+    font-size: 80px;
+    background-color: transparent;
+}
+
+.home-paragraph {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #213555;
+}
+
+.home-button button{
+    position: absolute;
+    left: 50%;
+    bottom: 100px; /* Adjust the distance from the bottom */
+    transform: translateX(-50%);
+    height: 60px;
+    width: 120px;
+    border-radius: 15%;
+    background-color: #4F709C;
+    font-family: lobster;
+    color: #F0F0F0;
+    border: 2px solid #213555;
+}
+
+.home-button-2 button{
+    position: absolute;
+    left: 50%;
+    bottom: 30px; /* Adjust the distance from the bottom */
+    transform: translateX(-50%);
+    height: 60px;
+    width: 120px;
+    border-radius: 15%;
+    background-color: #4F709C;
+    font-family: Lobster, cursive;
+    color: #F0F0F0;
+    border: 2px solid #213555;
+}
+
+/* Specific about me CSS, tried using Flexbox */
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    text-align: center;
 }
 
 .about-title {
     font-size: 64px; 
     font-family: 'Lobster', cursive;
+    color: #213555;
 }
 
-.about-me {
-    padding: 5%;
-    text-align: center;
-    margin-top: 5%;
-}
 
-.about-text {
-    text-align: justify;
+.about-showcase {
+    display: flex; /* This resets the column value defined in the container? */
+    align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 1px solid black;  */
+    /* Added the above to have a visible guidance for this showcase container */ 
 }
 
 .face-pic {
     border-radius: 50%; 
     border: inset #213555 4px;
     width: 200px;
+    height: 200px;
+}
+.about-text {
+    text-align: justify;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    color:#213555;
 }
 
-.footer {
-    margin-top: auto;
+/* Making buttons like this isn't consistent, but I tried to use margins before and now flexbox */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.about-button {
+    height: 60px;
+    width: 120px;
+    border-radius: 15%;
+    background-color: #4F709C;
+    color: #F0F0F0;
+    font-family: Lobster, cursive;
+    border: 2px solid #213555;
+    font-size: 14px;
+}
+
+.showcase-pic {
+    width: 200px; /* This seems to get ignored? */
+    height: 200px; /* Aspect ratio is kept but I preferred a round img, didn't get it to work */
+    border-radius: 50%;
+    border: 4px inset #213555;
+}
+
+.second-about-showcase {
+    display: flex; 
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.third-about-showcase {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.dog-img{
+    width: 200px;
+    height: 200px; /* Aspect ratio is kept because I edited the img before inserting it */
+    border-radius: 50%;
+    border: 4px inset #213555;
+}
+
+/* Topics page specific CSS starts here */
+/* Tried working with media queries but passed the 3hr mark so I gave up*/
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    text-align: center;
+}
+
+.topics-title{
+    font-size: 64px; 
+    font-family: 'Lobster', cursive;
+    color: #213555;
+}
+
+.intro-topics {
+    margin-bottom: 15px;
+}
+
+.topics-text .button-container {
+    justify-content:center ;
+    margin-bottom: 15px;
+}
+
+.topics-text {
+    text-align: justify;
+    margin: 40px;
+    font-family: 'Poppins', sans-serif;
+    color:#213555;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.feature-img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #213555;
+    margin: 15px;
+}
+
+.large-feature-img {
+    width: 100%;
+    height: 200px;
 }
